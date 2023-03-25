@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+
+#div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 270px 270px 0px 270px;
+}
+
+.forms {
+    padding: 20px;
+}
+
+.colorP {
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0px 200px;
+}
