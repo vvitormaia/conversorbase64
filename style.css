@@ -2,17 +2,35 @@ body {
     background-color: black;
 }
 
-#div {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 270px 270px 0px 270px;
+h3 {
+    display: block;
+    color: white;
 }
 
+
+/*formatacao div base 64*/
+#div {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 160px 270px 0px 270px;
+}
+
+/*formatacao div vogais e consoantes*/
+#divcontador {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 100px 270px 0px 270px;
+}
+
+
+ /*formatacao dos inputs*/
 .forms {
     padding: 20px;
 }
 
+/*formatacao do resultado decodificado/contado*/
 .colorP {
     color: aliceblue;
     display: flex;

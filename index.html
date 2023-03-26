@@ -7,20 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>Vitor Achilles Maia de Oliveira</title>
 
 </head>
 
 <body>
 
+    <!--inicio decodificador de base 64-->
     <div id="div">
+        <h3>Decodificador de valores em base 64</h3><br>
         <input type="text" placeholder="Valor de base 64..." id="valor" class="forms">
         <input type="button" onclick="pegarValorDigitado()" value="DECODIFICAR" class="forms" name="aciona">
     </div>
 
-     <br><p id="valorDecodificado" class="colorP"></p>
+        <br><p id="valorDecodificado" class="colorP"></p>
 
-     <script src="func.js" defer></script>
+
+    <!--inicio contador de vogais e consoantes-->
+    <div id="divcontador">
+        <h3>Contador de vogais e consoantes</h3>
+        <input type="text" placeholder="Digite o texto..." id="texto" class="forms">
+        <input type="button" value="CONTAGEM" class="forms" onclick="contarVogaisConsoantes()"> 
+    </div>
+
+        <br><p class="colorP" id="vogal"></p>
+        <br><p class="colorP" id="consoante"></p>
+
+  <script src="func.js" defer></script>
 
 </body>
 
