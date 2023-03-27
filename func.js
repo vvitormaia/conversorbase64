@@ -6,6 +6,7 @@ let valorDecodificado = "";
 function pegarValorDigitado() {
     valorParaDecodificar = document.getElementById('valor').value; 
 
+        //atob é uma funcao que decodifica o conteudo inserido para texto 
         let valorDecodificado = atob(valorParaDecodificar); 
 
        //console.log(valorDecodificado);
@@ -26,9 +27,13 @@ let numVogais = 0;
 let numConsoantes = 0; 
 
 function contarVogaisConsoantes() {
+    numVogais = 0;
+    numConsoantes = 0;
+
     textoDigitado = document.getElementById('texto').value;
     //console.log(textoDigitado);
 
+    //toLowerCase transforma todo texto inserido em minusculo, necessaário pois o javascript diferencia as letras maiusculas e minusculas 
     textoDigitado = textoDigitado.toLowerCase();
     //console.log(textoDigitado);
 
@@ -36,11 +41,15 @@ function contarVogaisConsoantes() {
         if (textoDigitado.charAt(i) == "a" || textoDigitado.charAt(i) == "e" || textoDigitado.charAt(i) == "i" || textoDigitado.charAt(i) == "o" || textoDigitado.charAt(i) == "u"){
             numVogais++
         }
-        else {
+        if (textoDigitado.charAt(i) == "b" || textoDigitado.charAt(i) == "c" || textoDigitado.charAt(i) == "d" || textoDigitado.charAt(i) == "f" || textoDigitado.charAt(i) == "g" || textoDigitado.charAt(i) == "h" || textoDigitado.charAt(i) == "j" || textoDigitado.charAt(i) == "k"  || textoDigitado.charAt(i) == "l" || textoDigitado.charAt(i) == "m" || textoDigitado.charAt(i) == "n" || textoDigitado.charAt(i) == "p" || textoDigitado.charAt(i) == "q" || textoDigitado.charAt(i) == "r" || textoDigitado.charAt(i) == "s" || textoDigitado.charAt(i) == "t" || textoDigitado.charAt(i) == "v" || textoDigitado.charAt(i) == "x" || textoDigitado.charAt(i) == "y" || textoDigitado.charAt(i) == "z" ){
             numConsoantes++
         }
         document.getElementById('vogal').innerHTML =  'O número total de vogais é: ' + numVogais;
-        document.getElementById('consoante').innerHTML = 'O número total de vogais é: ' + numConsoantes;
+        document.getElementById('consoante').innerHTML = 'O número total de consoantes é: ' + numConsoantes;
     }              
  }
+
+ //há dois if no código por conta de que com ELSE, os espacos e números acabavam sendo inseridos no contador numConsoantes++
+
+  
 
